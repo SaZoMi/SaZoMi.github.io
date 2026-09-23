@@ -1,102 +1,471 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Milan Saric | Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-TzZE4NUZ9MZL4oUObk9xJGHNPrD1RHoVYPFt6c0+oH+c1iyEFCP1V/1n93LRsODZfE97kFyAj7MqqEIsrYj5xg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-TzZE4NUZ9MZL4oUObk9xJGHNPrD1RHoVYPFt6c0+oH+c1iyEFCP1V/1n93LRsODZfE97kFyAj7MqqEIsrYj5xg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; color: #333; }
-    header { background: #333; color: #fff; padding: 20px; text-align: center; }
-    nav a { margin: 0 15px; color: #fff; text-decoration: none; }
-    section { padding: 40px 20px; max-width: 900px; margin: auto; background: white; margin-bottom: 20px; }
-    h2 { color: #444; }
-    footer { text-align: center; padding: 20px; background: #222; color: white; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #333;
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 5px;
+    }
+
+    header p {
+      margin-top: 0;
+      color: #ddd;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px 30px;
+      max-width: 900px;
+      margin: 20px auto;
+      background: white;
+      border-radius: 6px;
+    }
+
+    h2 {
+      color: #444;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 8px;
+      margin-bottom: 25px;
+    }
+
+    h3 {
+      margin-bottom: 5px;
+      color: #333;
+    }
+
+    .role {
+      margin-bottom: 35px;
+    }
+
+    .role:last-child {
+      margin-bottom: 0;
+    }
+
+    .company {
+      font-weight: bold;
+      color: #555;
+    }
+
+    .date {
+      color: #777;
+      font-size: 0.95em;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .skills-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .skills-list li {
+      margin-bottom: 12px;
+    }
+
+    .tech {
+      font-weight: bold;
+    }
+
+    .links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.1em;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-links a {
+      color: #333;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px 20px;
+      background: #222;
+      color: white;
+      margin-top: 20px;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 700px) {
+      nav a {
+        display: inline-block;
+        margin: 5px 8px;
+      }
+
+      section {
+        margin: 15px;
+        padding: 30px 20px;
+      }
+    }
   </style>
+
 </head>
+
 <body>
+
   <header>
     <h1>Milan Saric</h1>
-    <p>AI & Data Engineering Student | Ghent, Belgium</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <p>AI & Data Engineering Student | Software Engineering | DevOps | AI | Cybersecurity</p>
+    <p>Ghent, Belgium</p>
+
+```
+<nav>
+  <a href="#about">About</a>
+  <a href="#experience">Experience</a>
+  <a href="#education">Education</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="links">
+  <a href="https://www.linkedin.com/in/milan-saric-9aa082268"
+     target="_blank"
+     rel="noopener noreferrer">
+    <i class="fab fa-linkedin"></i> LinkedIn
+  </a>
+
+  <a href="https://github.com/SaZoMi"
+     target="_blank"
+     rel="noopener noreferrer">
+    <i class="fab fa-github"></i> GitHub
+  </a>
+</div>
+```
+
   </header>
 
   <section id="about">
     <h2>About Me</h2>
-    <p>I'm a final-year Applied Computer Science student with a focus on Artificial Intelligence and Data Engineering. With hands-on experience in cultural administration and the hospitality industry, I’ve developed strong communication, organizational, and technical skills. I’m passionate about technology, continuous learning, and creative problem-solving. I'm currently enrolled in a transfer program to Industrial Engineering-Computer Science.</p>
+
+```
+<p>
+  I'm an Applied Computer Science graduate with a focus on Artificial Intelligence
+  and Data Engineering, currently pursuing a Master's degree in Industrial
+  Engineering: Computer Science at Ghent University.
+</p>
+
+<p>
+  My experience spans software engineering, cloud technologies, DevOps,
+  AI, automation, data processing, and cybersecurity. During my internship
+  at Forvis Mazars, I developed APIs and backend services, worked with
+  Docker, Kubernetes and Helm, built Azure-based automation solutions,
+  explored Azure AI Foundry, and contributed to OSINT tooling.
+</p>
+
+<p>
+  I enjoy working on practical technical problems, learning new technologies,
+  and building solutions that combine software engineering with emerging
+  technologies.
+</p>
+```
+
   </section>
 
   <section id="experience">
     <h2>Experience</h2>
-    <h3>Administrative Assistant (2018 - 2024)</h3>
-    <p><strong>Stad Oostende - Culture Department</strong></p>
-    <ul>
-      <li>Surveilled and protected Belgian heritage</li>
-      <li>Organized and assisted in cultural events</li>
-    </ul>
 
-    <h3>Horeca Worker (2017 - 2024)</h3>
-    <p><strong>Galeries Vénitiennes Restaurant</strong></p>
-    <ul>
-      <li>Communicated effectively in a fast-paced environment</li>
-      <li>Managed multiple tasks with professionalism</li>
-      <li>Resolved customer inquiries with care</li>
-    </ul>
+```
+<div class="role">
+  <h3>AI DevOps & Cybersecurity Intern</h3>
+  <p class="company">Forvis Mazars — Ghent, Belgium</p>
+  <p class="date">2025</p>
+
+  <ul>
+    <li>
+      Developed a <strong>Python/FastAPI REST backend with PostgreSQL</strong>
+      for an internal employee portal designed to centralize company-wide
+      news, events and reminders for approximately 300 employees.
+    </li>
+
+    <li>
+      Containerized and deployed applications using
+      <strong>Docker, Kubernetes and Helm</strong>, creating Dockerfiles,
+      Compose configurations, Kubernetes resources and a Helm chart from scratch.
+    </li>
+
+    <li>
+      Implemented automated <strong>unit and module testing</strong>
+      within a GitHub-based CI/CD pipeline.
+    </li>
+
+    <li>
+      Developed an automated <strong>SharePoint vCard solution</strong>
+      using Python Azure Functions and Power Automate, parsing employee
+      information and generating vCards and QR codes for employee business cards.
+    </li>
+
+    <li>
+      Automated cross-system <strong>leaver validation</strong> using
+      Active Directory and other system data. Evaluated AI, regex and
+      fuzzy-matching approaches before implementing fuzzy matching with
+      confidence scoring to balance accuracy, performance and cost.
+    </li>
+
+    <li>
+      Developed the backend for an <strong>Azure AI Foundry chatbot</strong>,
+      implementing API-based session and message handling with Redis to
+      provide controlled access to AI models outside the Azure portal
+      while maintaining traceability for audit use cases.
+    </li>
+
+    <li>
+      Modernized an internal <strong>OSINT reconnaissance tool</strong>
+      from Python 2 to Python 3 and used Python with Neo4j to visualize
+      relationships between domains and infrastructure.
+    </li>
+  </ul>
+</div>
+
+
+<div class="role">
+  <h3>Administrative Assistant</h3>
+  <p class="company">Stad Oostende — Culture Department</p>
+  <p class="date">2018 – 2024</p>
+
+  <ul>
+    <li>Supported the organization of cultural events and activities.</li>
+    <li>Assisted with the protection and preservation of Belgian cultural heritage.</li>
+  </ul>
+</div>
+
+
+<div class="role">
+  <h3>Restaurant Server</h3>
+  <p class="company">Galeries Vénitiennes Restaurant</p>
+  <p class="date">2017 – 2024</p>
+
+  <ul>
+    <li>Worked effectively in a fast-paced, customer-facing environment.</li>
+    <li>Managed multiple priorities while maintaining professional communication.</li>
+  </ul>
+</div>
+```
+
   </section>
 
   <section id="education">
     <h2>Education</h2>
-    <h3>MSc, Industrial engineer: computer sciences (2024 - 2026)</h3>
-    <p>UGent, Ghent</p>
-    <p>Courses: Computer architecture, Datastructures & Alghoritms</p>
 
-    
-    <h3>BSc, Applied Computer Science: AI & Data Engineering (2021 - 2025)</h3>
-    <p>HoGent, Ghent</p>
-    <p>Courses: Machine/Deep Learning, Big Data, Linux, Web Services</p>
+```
+<div class="role">
+  <h3>BSc, Applied Computer Science: AI & Data Engineering</h3>
+  <p class="company">HOGENT — Ghent, Belgium</p>
+  <p class="date">2022 – 2026</p>
 
-    <h3>Mathematics and Science (2014 - 2020)</h3>
-    <p>Koninglijk Atheneum, Oostende</p>
-    <p>Courses: Mathematics, Chemistry, Physics, Biology</p>
+  <p>
+    Relevant coursework: Machine Learning, Deep Learning, Big Data,
+    Linux, Web Services
+  </p>
+</div>
+
+
+<div class="role">
+  <h3>Mathematics and Science</h3>
+  <p class="company">Koninklijk Atheneum — Ostend, Belgium</p>
+  <p class="date">2014 – 2020</p>
+
+  <p>
+    Relevant coursework: Mathematics, Chemistry, Physics, Biology
+  </p>
+</div>
+```
+
   </section>
 
   <section id="skills">
     <h2>Skills</h2>
-    <ul>
-      <li><strong>Technical:</strong> Python, Java, JavaScript, SQL, C++, Power BI, SAP, Azure ML, AWS, Docker</li>
-      <li><strong>Soft Skills:</strong> Problem-solving, Adaptability, Attention to detail, Decision-making</li>
-      <li><strong>Languages:</strong> Dutch, French, English, Serbian</li>
-      <li><strong>Office Tools:</strong> Word, Excel, PowerPoint</li>
-      <li><strong>Hobbies:</strong> Football, Swimming, Guitar, Drums, Running</li>
-    </ul>
+
+```
+<ul class="skills-list">
+
+  <li>
+    <span class="tech">Programming:</span>
+    Python, Java, JavaScript, C++, SQL
+  </li>
+
+  <li>
+    <span class="tech">Backend & APIs:</span>
+    FastAPI, REST APIs, PostgreSQL
+  </li>
+
+  <li>
+    <span class="tech">Cloud & AI:</span>
+    Microsoft Azure, Azure Functions, Azure AI Foundry, Azure ML, AWS
+  </li>
+
+  <li>
+    <span class="tech">DevOps & Infrastructure:</span>
+    Docker, Kubernetes, Helm, CI/CD
+  </li>
+
+  <li>
+    <span class="tech">Automation & Data:</span>
+    Power Automate, SharePoint, Power BI
+  </li>
+
+  <li>
+    <span class="tech">Cybersecurity & OSINT:</span>
+    OSINT, reconnaissance, DNS, TLS/SSL, Neo4j
+  </li>
+
+  <li>
+    <span class="tech">Other:</span>
+    Redis, Git, GitHub, SAP
+  </li>
+
+  <li>
+    <span class="tech">Soft Skills:</span>
+    Problem-solving, adaptability, attention to detail, decision-making,
+    communication
+  </li>
+
+  <li>
+    <span class="tech">Languages:</span>
+    Dutch, French, English, Serbian
+  </li>
+
+  <li>
+    <span class="tech">Office:</span>
+    Microsoft Word, Excel, PowerPoint
+  </li>
+
+  <li>
+    <span class="tech">Interests:</span>
+    Football, swimming, guitar, drums, running
+  </li>
+
+</ul>
+```
+
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:saric.milan@hotmail.com">saric.milan@hotmail.com</a></p>
-    <p>Phone: +32 489 32 99 33</p>
-    <p>Location: Ostend, Belgium</p>
-    <p>
-    LinkedIn: 
-    <a href="https://www.linkedin.com/in/milan-saric-9aa082268"" target="_blank">
-      <i class="fab fa-linkedin"></i> milan-saric
-    </a>
-    </p>
-  </section>
 
-<footer>
-  <p>&copy; 2025 Milan Saric. All rights reserved.</p>
+```
+<div class="contact-links">
   <p>
-    <a href="https://www.linkedin.com/in/milan-saric-9aa082268" target="_blank" style="color:white;">
-      <i class="fab fa-linkedin"></i> Connect on LinkedIn
+    <strong>Email:</strong>
+    <a href="mailto:saric.milan@hotmail.com">
+      saric.milan@hotmail.com
     </a>
   </p>
-</footer>
+
+  <p>
+    <strong>Phone:</strong>
+    +32 489 32 99 33
+  </p>
+
+  <p>
+    <strong>Location:</strong>
+    Ostend, Belgium
+  </p>
+
+  <p>
+    <strong>LinkedIn:</strong>
+    <a href="https://www.linkedin.com/in/milan-saric-9aa082268"
+       target="_blank"
+       rel="noopener noreferrer">
+      <i class="fab fa-linkedin"></i> milan-saric
+    </a>
+  </p>
+
+  <p>
+    <strong>GitHub:</strong>
+    <a href="https://github.com/SaZoMi"
+       target="_blank"
+       rel="noopener noreferrer">
+      <i class="fab fa-github"></i> SaZoMi
+    </a>
+  </p>
+</div>
+```
+
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Milan Saric. All rights reserved.</p>
+
+```
+<p>
+  <a href="https://www.linkedin.com/in/milan-saric-9aa082268"
+     target="_blank"
+     rel="noopener noreferrer">
+    <i class="fab fa-linkedin"></i> LinkedIn
+  </a>
+  &nbsp; | &nbsp;
+  <a href="https://github.com/SaZoMi"
+     target="_blank"
+     rel="noopener noreferrer">
+    <i class="fab fa-github"></i> GitHub
+  </a>
+</p>
+```
+
+  </footer>
+
 </body>
 </html>
